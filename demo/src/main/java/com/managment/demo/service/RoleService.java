@@ -13,7 +13,7 @@ public interface RoleService {
 
     void update(Role role);
 
-    Long delete(Long id);
+    void delete(Long id);
 
-    Long delete(Role role);
+    void delete(Role role);
 }

@@ -13,7 +13,7 @@ public interface StateService {
 
     void update(State state);
 
-    Long delete(Long id);
+    void delete(Long id);
 
-    Long delete(State state);
+    void delete(State state);
 }

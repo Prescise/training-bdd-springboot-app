@@ -13,7 +13,7 @@ public interface UserTaskService {
 
     void update(UserTask userTask);
 
-    Long delete(Long id);
+    void delete(Long id);
 
-    Long delete(UserTask userTask);
+    void delete(UserTask userTask);
 }
