@@ -3,9 +3,10 @@ package com.managment.demo.service;
 import com.managment.demo.model.Role;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface RoleService {
-    Role findOne(Long id);
+    Optional<Role> findOne(Long id);
 
     List<Role> findAll();
 

@@ -3,9 +3,10 @@ package com.managment.demo.service;
 import com.managment.demo.model.State;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface StateService {
-    State findOne(Long id);
+    Optional<State> findOne(Long id);
 
     List<State> findAll();
 

@@ -3,9 +3,10 @@ package com.managment.demo.service;
 import com.managment.demo.model.Task;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface TaskService {
-    Task findOne(Long id);
+    Optional<Task> findOne(Long id);
 
     List<Task> findAll();
 
