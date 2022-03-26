@@ -2,10 +2,7 @@ package com.managment.demo.model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Data
@@ -17,5 +14,7 @@ public class Task {
     private String name;
     private String description;
     private Date dateCreation;
-    //private State state;
+
+    @ManyToOne
+    private State state;
 }
